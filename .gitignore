@@ -1,0 +1,77 @@
+# ==========================================
+# 1. 编译器及链接器生成的构建产物 (Build Artifacts)
+# ==========================================
+*.o
+*.obj
+*.d
+*.so
+*.a
+*.lib
+*.dll
+*.dylib
+
+# 最终生成的二进制可执行文件 (Executables)
+# 纯 Linux/macOS 下可执行文件通常没有后缀，可根据你的程序名手动添加（如 /main）
+*.exe
+*.out
+*.app
+
+# ==========================================
+# 2. 构建工具生成的临时文件 (Build Systems)
+# ==========================================
+# CMake 产生的缓存和中间目录
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+
+# 常见的构建输出目录名（根据你的习惯选用）
+build/
+Build/
+out/
+bin/
+
+# ==========================================
+# 3. 集成开发环境及编辑器缓存 (IDE / Editors)
+# ==========================================
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# CLion / JetBrains
+.idea/
+cmake-build-*/
+
+# Visual Studio (MSVC)
+.vs/
+Debug/
+Release/
+x64/
+x86/
+*.suo
+*.user
+*.userosscache
+*.sln
+*.vcxproj
+*.filters
+
+# 临时和备份文件
+*~
+*.swp
+*.bak
+.DS_Store
+
+# ==========================================
+# 4. 本地测试数据和日志 (Local Data / Logs)
+# ==========================================
+*.log
+*.dat
+*.out.txt
+
+./output
